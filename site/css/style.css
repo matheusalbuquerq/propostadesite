@@ -1,0 +1,351 @@
+*{
+	margin:0;
+	padding:0;
+	font-family: arial, helvetica, sans-serif;
+	box-sizing: border-box;
+}
+
+nav{
+	background:#C73030;
+	width:100%;
+	height:5.625rem;
+	box-shadow: 0px 3px 5px 0px rgba(103,30,30,1);
+	margin-bottom: 1.25em;
+}
+
+#logo_desktop{
+	display: none;
+}
+
+#logo_mobile{
+	height: 4.06rem;
+	width: 6rem;
+	float: left;
+	margin-top: 0.8rem;
+	margin-left: 1.25rem;
+}
+
+#logo_mobile img{
+	height: 100%;
+	width: 100%;
+}
+
+#toggle{
+	opacity: 0%;
+	display: pointer;
+	float: right;
+}
+
+label{
+	display: block;
+	color:#fff;
+	font-size: 3.21em;
+	font-weight: bold;
+	float: right;
+	margin-top: 0.5rem;
+	margin-right: 1.25rem;
+}
+
+#menu{
+	display: none;
+	float: left;
+	background:#c73030;
+	width: 100%;
+	height: 12.8rem;
+}
+
+#menu ul li{
+	margin-top: 0.9rem;
+	margin-bottom: 0.9rem;
+	padding-bottom: 1rem;
+	margin-left: 1.25rem;
+	margin-right: 1.25rem;
+	list-style: none;
+}
+
+#menu ul li a{
+	font-weight: bold;
+	color: #ffffff;
+	font-style: italic;
+	font-size: 1.75em;
+	text-decoration: none;
+}
+
+#toggle:checked + #menu{
+	display: block;
+}
+
+#home{
+	border-bottom: 1px solid #fff;
+}
+
+#content{
+	border-bottom: 1px solid rgba(255,255,255,0.75);
+}
+
+#social_medias{
+	border:none;
+}
+
+
+h1{
+	color: #707070;
+	font-size: 1.75em;
+	text-align: center;
+}
+
+p{
+	margin-top: 0.93em;
+	margin-left: 1.25em;
+	margin-right: 1.25em;
+	margin-bottom: 1.56em;
+	text-align: center;
+	font-size: 1.25em;
+}
+
+
+/*página home*/
+
+#last_content{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#img_cover{
+	width:18.125rem;
+	height:10.31rem;
+	border:1px solid #000000;
+	margin-top: 1.25em;
+}
+
+#img_cover img{
+	width: 100%;
+	height: 100%;
+}
+
+#img_link{
+	height:2.5rem;
+	width:18.125rem;
+	background:#fc5f5f;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0px 0px 6px 0px rgba(242,139,139,1);
+}
+
+#img_link a{
+	font-size: 1.25em;
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+/*página contents*/
+
+#bastille{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#lp{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#lp #img_link a{
+	font-size: 1rem;
+} 
+
+#footer{
+	width: 100%;
+	height:3.125rem;
+	background: #C73030;
+	margin-top: 6rem;
+}
+
+@media only screen and (min-width: 1024px){
+
+	nav{
+		width: 100%;
+		height:6rem;
+		display: flex;
+	}
+
+	#logo_mobile{
+		display: none;
+	}
+
+	#logo_desktop{
+		display: block;
+		height:3.75rem;
+		width:41.56rem;
+		margin-top: 1em;
+		margin-left: 2em;
+	}
+
+	#logo_desktop img{
+		height:100%;
+		width:100%;
+	}
+	
+
+	#toggle{
+		display: none;
+	}
+
+	label{
+		display: none;
+	}
+
+	#menu{
+		display: flex;
+		width: 100%;
+		height: 90%;
+		justify-content: flex-end;
+		margin-right: 2em;
+	}
+
+	#menu ul{
+		display: flex;
+		flex-direction: row;
+	}
+
+	#menu ul li{
+		list-style: none;
+		border-bottom: none;
+		margin-top: 2rem;
+		margin-left: 1rem;
+		margin-right: 1rem;
+		padding-right: 1rem;
+	}
+
+	#home{
+		border-right: 1px solid #fff;
+	}
+
+	#content{
+		border-right:1px solid #fff;
+	}
+
+	#menu ul li a:hover{
+		color:#FC5F5F;
+	}
+
+	h1{
+		font-size: 2em;
+	}
+
+	p{
+		font-size: 1.5em;
+	}
+
+	
+	main{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	/*página home*/
+
+	#about{
+		height: 30rem;
+		width: 36rem;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		margin-left: 3.125rem;
+	}
+
+	#last_content{
+		width: 50%;
+		display: flex;
+		margin-right: 3.125rem;
+		margin-top: 1.5rem;
+	}
+
+	#last_content h1{
+		background:#fc5f5f;
+		color:#fff;
+		height: 3.5rem;
+		width:36rem;
+		justify-content: center;
+		padding-top: 0.7rem;
+	}
+
+
+	#img_cover{
+		width: 36rem;
+		height: 20.25rem;
+	
+	}
+
+	#img_link{
+		width:36rem;
+		height: 4rem;
+		font-size: 1.5rem;
+	}
+
+	#img_link:hover{
+		height: 5rem;
+	}
+
+	/*página contents*/ 
+
+	#conteudo{
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+
+	#conteudo_titulo{
+		width: 100vw;
+		height: 4rem;
+		background: #fc5f5f;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 1rem;
+	}
+
+	#conteudo_titulo h1{
+		font-style: italic;
+		color:#fff;
+	}
+
+	#links{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	#bastille{
+		margin-right: 1.5rem;
+	}
+
+	#lp{
+		margin-left: 1.5rem;
+	}
+
+	#lp #img_link a{
+		font-size: 1.25em;
+	} 
+
+	#footer{
+		margin-top: 7rem;
+	}
+
+	
+	
+
+
+
+
+
+
+
+
